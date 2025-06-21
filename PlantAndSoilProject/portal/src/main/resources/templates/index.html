@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="en" th:replace="~{base::Layout(~{::section})}">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Index</title>
+</head>
+<body>
+  <section class="main-secttion" >
+          <!-- Slideshow -->
+  <div id="plantCarousel" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="https://www.shutterstock.com/image-photo/different-types-soil-on-white-260nw-1873788577.jpg" class="d-block w-100" alt="Soil Types" width="300px">
+      </div>
+      <div class="carousel-item">
+        <img src="https://balajinurseryandgarden.com/wp-content/uploads/2022/05/WhatsApp-Image-2022-05-03-at-8.15.19-PM-1.jpeg" class="d-block w-100" alt="Plant Nursery" width="300px">
+      </div>
+      <div class="carousel-item">
+        <img src="https://i.ytimg.com/vi/kpJZLN3AuMk/maxresdefault.jpg" class="d-block w-100" alt="Gardening Tools" width="300px">
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#plantCarousel" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#plantCarousel" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+  <!-- Plants Section -->
+  <div id="plants" class="homecontainer my-5">
+    <h2>Popular Plants</h2>
+    <div class="row">
+      <div class="col-md-4">
+        <div class="card">
+          <img src="https://www.bhg.com/thmb/U7wfJj1rAYgj1c-rQbxwWUrfP-I=/1866x0/filters:no_upscale():strip_icc()/red-roses-in-garden-b22bfee8-b95cf5f9a2fe458da328601ad980c7bf.jpg" class="card-img-top" alt="Rose">
+          <div class="card-body">
+            <h5 class="card-title">Rose</h5>
+            <p class="card-text">Roses are known for their beauty and fragrance, making them a popular choice for gardens.</p>
+            <a href="https://www.nesdis.noaa.gov/about/k-12-education/jpss-education/learn-about-soil-types" class="btn btn-primary" target="_blank">Learn More</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card">
+          <img src="https://floweraura-blog-img.s3.ap-south-1.amazonaws.com/five-best-flower-garden-in-india/tulip-garden-cover-image.jpg" class="card-img-top" alt="Tulip">
+          <div class="card-body">
+            <h5 class="card-title">Tulip</h5>
+            <p class="card-text">Tulips are vibrant spring flowers that add a splash of color to any garden.</p>
+            <a href="https://www.nesdis.noaa.gov/about/k-12-education/jpss-education/learn-about-soil-types" class="btn btn-primary" target="_blank">Learn More</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card">
+          <img src="https://cdn.britannica.com/82/7082-050-566913BA/Field-sunflowers-farm-valley-Assiniboine-River-Manitoba.jpg" class="card-img-top" alt="Sunflower">
+          <div class="card-body">
+            <h5 class="card-title">Sunflower</h5>
+            <p class="card-text">Sunflowers are tall plants with large yellow petals, known for their seeds and oil.</p>
+            <a href="https://www.nesdis.noaa.gov/about/k-12-education/jpss-education/learn-about-soil-types" class="btn btn-primary" target="_blank">Learn More</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Soil Section -->
+  <div id="soil" class="homecontainer my-5">
+    <h2>Understanding Soil Types</h2>
+    <p>Soil is a vital component for plant growth. Different plants thrive in different soil types. Here's an overview:</p>
+    <ul>
+      <li><strong>Sandy Soil:</strong> Drains quickly but doesn't hold nutrients well.</li>
+      <li><strong>Clay Soil:</strong> Holds nutrients but drains poorly.</li>
+      <li><strong>Loamy Soil:</strong> A balanced mix of sand, silt, and clay, ideal for most plants.</li>
+    </ul>
+    <p>For more detailed information, visit the <a href="https://www.nesdis.noaa.gov/about/k-12-education/jpss-education/learn-about-soil-types" target="_blank">NOAA Soil Types Guide</a>.</p>
+  </div>
+
+  <!-- Nearby Nurseries -->
+  <div id="nurseries" class="homecontainer my-5">
+    <h2>Nearby Plant Nurseries</h2>
+    <ul>
+      <li><a href="https://greenzone.net.in/" target="_blank">Green Zone Plant Nursery</a> - Offers a wide variety of indoor plants, pots, planters, and gardening accessories.</li>
+      <li><a href="https://shreebalajinursery.com/" target="_blank">Shree Balaji Nursery</a> - Specializes in bonsai, flowering plants, and indoor/outdoor plants.</li>
+      <li><a href="https://nplantsnursery.in/" target="_blank">Nplants Nursery</a> - Provides native and exotic plants, vertical garden setups, and gardening tools.</li>
+      <li><a href="https://gurupreetnursery.com/" target="_blank">Gurupreet Nursery</a> - Known for annual flowers, aquatic plants, and garden maintenance services.</li>
+      <li><a href="https://www.whatshot.in/pune/visit-punes-biggest-nursery-that-houses-more-than-700-plants-and-100-varieties-of-succulents-c-32092" target="_blank">Sanjay Nursery</a> - Houses over 700 plants and 100 varieties of succulents, making it one of Pune's largest nurseries.</li>
+    </ul>
+  </div>
+  </section>
+</body>
+</html>

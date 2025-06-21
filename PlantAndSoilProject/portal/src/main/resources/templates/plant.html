@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="en" th:replace="~{base::Layout(~{::section})}">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plants</title>
+</head>
+<body>
+    <section >
+        
+  <!-- Main Content -->
+  <div class="plantcontainer">
+    <section id="plants">
+      <h2 class="my-4">Popular Indoor Plants</h2>
+      <div class="row">
+        <!-- Plant 1 -->
+        <div class="col-md-4">
+          <div class="card">
+            <img src="https://www.gardendesign.com/pictures/images/675x529Max/site_3/variegated-spider-plant-chlorophytum-comosum-vittatum-shutterstock-com_16240.jpg" class="card-img-top" alt="Spider Plant">
+            <div class="card-body">
+              <h5 class="card-title">Spider Plant</h5>
+              <p class="card-text">An easy-to-grow plant known for its air-purifying qualities.</p>
+              <a href="https://en.wikipedia.org/wiki/Chlorophytum_comosum" class="btn btn-primary" target="_blank">Learn More</a>
+            </div>
+          </div>
+        </div>
+        <!-- Plant 2 -->
+        <div class="col-md-4">
+          <div class="card">
+            <img src="https://images.newscientist.com/wp-content/uploads/2023/12/19122456/SEI_184072256.jpg" class="card-img-top" alt="Aloe Vera">
+            <div class="card-body">
+              <h5 class="card-title">Aloe Vera</h5>
+              <p class="card-text">A succulent plant with medicinal properties.</p>
+              <a href="https://en.wikipedia.org/wiki/Aloe_vera" class="btn btn-primary" target="_blank">Learn More</a>
+            </div>
+          </div>
+        </div>
+        <!-- Plant 3 -->
+        <div class="col-md-4">
+          <div class="card">
+            <img src="https://www.plantandflowerinfo.com/images/snake-plant-house-plantOG.jpg" class="card-img-top" alt="Snake Plant">
+            <div class="card-body">
+              <h5 class="card-title">Snake Plant</h5>
+              <p class="card-text">A hardy plant that thrives on neglect and purifies air.</p>
+              <a href="https://en.wikipedia.org/wiki/Sansevieria_trifasciata" class="btn btn-primary" target="_blank">Learn More</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="care" class="my-5">
+      <h2>Plant Care Tips</h2>
+      <ul>
+        <li><strong>Watering:</strong> Ensure soil is moist but not waterlogged.</li>
+        <li><strong>Light:</strong> Place plants in indirect sunlight.</li>
+        <li><strong>Temperature:</strong> Keep plants in a warm environment.</li>
+        <li><strong>Fertilizing:</strong> Feed plants during the growing season.</li>
+      </ul>
+    </section>
+  </div>
+    </section>
+</body>
+</html>

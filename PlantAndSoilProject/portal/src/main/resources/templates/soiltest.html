@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org" th:replace="~{base::Layout(~{::section})}">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soil Test</title>
+    <link rel="stylesheet" href="/css/dropdown.css">
+    <link rel="stylesheet" href="/css/styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+<body>
+    <section><p><div class="soiltestcontainer">
+    <section id="soil-types">
+      <h2 class="my-4">Understanding Soil Types</h2>
+      <p>Soil is classified into three main types based on particle size:</p>
+      <ul>
+        <li><strong>Sandy Soil:</strong> Drains quickly but doesn't hold nutrients well.</li>
+        <li><strong>Clay Soil:</strong> Retains nutrients but drains poorly.</li>
+        <li><strong>Loamy Soil:</strong> A balanced mix of sand, silt, and clay, ideal for most plants.</li>
+      </ul>
+      <p>To determine your soil type, you can perform a simple ribbon test. Take a handful of moist soil and try to form a ribbon by squeezing it between your fingers. If it forms a long, smooth ribbon, your soil is clayey. If it doesn't hold together, it's sandy. A short ribbon indicates loamy soil.</p>
+    </section>
+
+    <section id="testing-methods">
+      <h2 class="my-4">Soil Testing Methods</h2>
+      <p>Regular soil testing helps in understanding nutrient levels and pH balance. Here are some common methods:</p>
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">1. DIY Soil Texture Test</h5>
+          <p class="card-text">Mix a soil sample with water in a jar and shake well. Let it settle for 24 hours. The layers formed will help you determine the proportions of sand, silt, and clay in your soil.</p>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">2. Soil pH Test</h5>
+          <p class="card-text">Mix a small amount of soil with distilled water and add a few drops of pH indicator solution. The color change will indicate whether your soil is acidic, neutral, or alkaline.</p>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">3. Soil Test Kits</h5>
+          <p class="card-text">Purchase a soil test kit to measure nutrient levels and pH. These kits provide more accurate results and are available at local garden centers or online.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="improving-soil">
+      <h2 class="my-4">Improving Soil Quality</h2>
+      <p>Based on your soil test results, you can amend your soil to improve its quality:</p>
+      <ul>
+        <li><strong>For Acidic Soil:</strong> Add lime to raise the pH.</li>
+        <li><strong>For Alkaline Soil:</strong> Add organic matter like compost to lower the pH.</li>
+        <li><strong>For Poor Drainage:</strong> Incorporate organic materials like compost to improve soil structure.</li>
+        <li><strong>For Nutrient Deficiencies:</strong> Add specific fertilizers based on the nutrient lacking.</li>
+      </ul>
+      <p>Regularly adding compost and organic matter can enhance soil fertility and structure over time.</p>
+    </section>
+  </div></p></section> 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>

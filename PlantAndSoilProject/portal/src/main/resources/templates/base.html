@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org" th:fragment="Layout(content)" >
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/dropdown.css">
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="/css/heading.css">
+    <link rel="stylesheet" href="/css/form-styles.css">
+    <link rel="stylesheet" href="/css/index.css">
+    <style>
+      /* header{
+        background-image: url("https://png.pngtree.com/background/20210711/original/pngtree-new-cool-plant-banner-on-summer-picture-image_1113797.jpg");
+      } */
+ </style>
+  </head>
+<body>
+  <header class=" text-white text-center py-3 fixed-top">
+  <div class="headcontainer">
+     <img id="logo" src="/img/logo.jpg" alt="Logo">
+    <h1 class="display-4">Plant and soil</h1>
+    <p class="lead">"a symbiotic relationship"</p>
+  </div>
+</header>
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top">   
+  <div class="container-fluid">
+    <!-- <a class="navbar-brand" href="/">User Management</a> -->
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link" href="/index">Home</a>
+          <!-- <a class="nav-link active" aria-current="page" href="/">Home</a> -->
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/plant">Plant</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/soil">Soil</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/soiltest">Soiltest</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/about">About</a>
+        </li>
+         <li class="nav-item">
+          <a class="nav-link" href="/contact">contact</a>
+        </li>
+      </ul>
+      <form class="d-flex">
+        <input id="searchInput" class="form-control me-2" type="text" placeholder="Search" aria-label="Search" onkeyup="filterCards()">
+        <button class="btn btn-outline-success" type="submit">Search</button>
+      </form>
+      <div class="profile">
+                           <div class="dropdown">
+                                    <button id="dropdownToggle" class="dropbtn">Login ▼</button>
+                                    <div id="dropdownMenu" class="dropdown-content"></div>
+                                    </div>
+                            
+                        </div>
+    </div>
+  </div>
+  
+</nav>
+
+      <main>
+        <!-- <h1>base page</h1> -->
+        
+        <div class="content">
+            <div th:replace="${content}"></div>
+        </div>
+      </main>
+   <!-- <footer class="footer bg-dark text-white text-center py-3">
+    <p>&copy; 2025 Java Developer. All rights reserved.</p>
+  </footer> -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+      <script src="/js/profilemenu.js" ></script>
+      <script src="/js/activepage.js"></script>
+      <script src="/js/search.js" ></script>
+  </body>
+</html>

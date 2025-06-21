@@ -1,0 +1,108 @@
+html, body{
+  margin: 0;
+  height: 100%;
+  width: 100%;
+  box-sizing: border-box;
+  background-color: #FEE0FF;
+}
+main{
+    margin-top:200px;
+    padding: 0 10px 0 10px;
+}
+.flash-alert-danger {
+    text-align: center;
+    color: #721c24;
+    background-color: #f8d7da;
+    border: 1px solid #f5c6cb;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: larger;
+}
+li.nav-item a{
+    font-size:larger;
+    font-weight: bold;
+    padding: 0;
+    margin: 0;
+}
+nav{
+    margin: 125px 0 0 0;
+    padding: 0;
+    height: 50px;
+    position: sticky;
+    background-color: #FEE0FF;
+    box-shadow: 1px 1px 1px 1px black;
+}
+  .nav-link {
+    color: black; /* Default color */
+    text-decoration: none;
+    /* padding: 8px 16px; */
+  }
+  .nav-link.active {
+    color: #007bff; /* Active color (blue in this case) */
+    font-weight: bold;
+    border-bottom: 2px solid #007bff; /* Optional underline */
+  }
+button, .dropdownMenu a{
+  box-shadow: 0 0 5px 0 black; 
+}
+.btn-outline-success{
+    color: #fff;
+    border-color: #0d6efd;
+    background-color: #0d6efd;
+}
+.btn-outline-success:hover{
+    color: #fff;
+    background-color: #7ca6e1;
+
+}
+
+header{
+    padding: 0;
+    height: 125px;
+}
+h1.display-4{
+    font-weight: bolder;
+    margin: 0;
+    padding: 0;
+    color: #007b5e;
+    text-shadow:
+      0 0 5px #FFD700,
+      0 0 10px #FFC300,
+      0 0 15px #FFA500,
+      0 0 20px #FFD700;
+}
+.lead{
+  color: #5C3D2B;
+  font-weight: bolder;
+  text-shadow: 0 0 5px #FFFFFF,
+               0 0 10px #CCCCCC,
+               0 0 15px #FFFFFF;
+}
+.footer {
+   background-color: #343a40;
+      color: white;
+      padding: 20px;
+      text-align: center;
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+}
+.plantcontainer {
+      margin-top: 80px;
+    }
+    .card {
+      margin-bottom: 20px;
+    }
+    .card img {
+      height: 200px;
+      object-fit: cover;
+    }
+
+    .homecontainer {
+      margin-top: 80px;
+    }
+    .carousel-inner img {
+      width: 100%;
+      height: 60vh;
+      object-fit: cover;
+    }

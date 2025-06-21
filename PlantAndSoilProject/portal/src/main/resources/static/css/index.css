@@ -1,0 +1,86 @@
+.main-secttion {
+  padding-top: 20px;
+}
+
+/* Carousel stilleri */
+.carousel-inner img {
+  max-height: 450px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 50%;
+}
+
+/* Container içeriği */
+.homecontainer {
+  padding: 40px 20px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  margin: 20px auto;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Kart stilleri */
+.card {
+  margin-bottom: 20px;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+  transition: transform 0.2s ease-in-out;
+}
+
+.card:hover {
+  transform: scale(1.03);
+}
+
+.card-title {
+  color: #007b5e;
+  font-weight: 600;
+}
+
+.card-text {
+  font-size: 0.95rem;
+  color: #333;
+}
+
+.card-img-top {
+  height: 200px;
+  object-fit: cover;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+/* Buton stilleri */
+.btn-primary {
+  background-color: #007b5e;
+  border: none;
+}
+
+.btn-primary:hover {
+  background-color: #005e47;
+}
+
+/* Liste stilleri */
+ul {
+  list-style: disc;
+  padding-left: 20px;
+}
+
+ul li {
+  margin-bottom: 10px;
+  font-size: 1rem;
+}
+
+a {
+  text-decoration: none;
+  color: #007b5e;
+}
+
+a:hover {
+  text-decoration: underline;
+  color: #005e47;
+}
