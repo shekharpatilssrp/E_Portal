@@ -42,6 +42,15 @@ nav{
     font-weight: bold;
     border-bottom: 2px solid #007bff; /* Optional underline */
   }
+.nav-item2{
+  margin-right: 15px;
+  border-radius: 5px;
+  box-shadow: 0 0 5px 0 black;
+
+}
+a .nav-link{
+
+}
 button, .dropdownMenu a{
   box-shadow: 0 0 5px 0 black; 
 }
