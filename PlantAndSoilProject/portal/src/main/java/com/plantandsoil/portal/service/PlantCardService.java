@@ -43,7 +43,6 @@ public class PlantCardService {
                 })
                 .orElseThrow(() -> new RuntimeException("Plant not found with id: " + id));
     }
-
     public void deletePlant(Long id) {
         plantCardRepository.deleteById(id);
     }

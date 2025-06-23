@@ -44,5 +44,11 @@ public class ProfileController {
             redirectAttributes.addFlashAttribute("msg", "Password updated");
             return "redirect:/changepassword";
     }
+
+//     if (!passwordEncoder.matches(currentPassword, user.getPassword())) {
+//     redirectAttributes.addFlashAttribute("msg", "Current password is incorrect.");
+//     return "redirect:/changepassword";
+// }
+
 }
 
